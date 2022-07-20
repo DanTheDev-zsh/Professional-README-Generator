@@ -47,7 +47,8 @@ function renderLicenseSection(license) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-    return `# ${data.res_title}
+    return `# ${data.res_title}  
+${renderLicenseBadge(data.res_license)}  
 ## Table of Contents
 1. [Description](#description)
 2. [Installation](#installation)
@@ -56,23 +57,26 @@ function generateMarkdown(data) {
 5. [Tests](#tests)
 6. [License](#license)
 7. [Questions](#questions)
-${renderLicenseLink(data.res_license)}
 ### Description
-${data.res_description}
+${data.res_description ? data.res_description : 'none provided'}
+
 ### Installation
-${data.res_installation}
+${data.res_installation ? data.res_installation : 'none provided'}
+
 ### Usage
-${data.res_usage}
+${data.res_usage ? data.res_usage : 'none provided'}
+
 ### Contributing
-${data.res_contribution}
+${data.res_contribution ? data.res_contribution : 'none provided'}
+
 ### Tests
-${data.res_tests}
+${data.res_tests ? data.res_tests : 'none provided'}
+
 ${renderLicenseSection(data.res_license)}
-This application is covered under the ${data.res_license} License. Find out more at the link down below.  
-${renderLicenseLink(data.res_license)}
+This application is covered under the ${data.res_license} License. Find out more at ${renderLicenseLink(data.res_license)}
 ### Questions
 Here is the link to my GitHub profile: [GitHub](https://github.com/${data.res_username})  
-You can also email me at ${data.res_email}
+You can also email me at ${data.res_email ? data.res_email : 'none provided'}
 `;
 }
 

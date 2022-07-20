@@ -9,6 +9,7 @@ const questions = ['What is the title of the project', 'Please write a descripti
 // array structure: [title, description, installation, usage information, contribution guidelines, tests, username, email]
 
 // TODO: Create a function to write README file
+// note, writeFile overwrite by default
 function writeToFile(fileName, data) {
     console.log({fileName, data});
     try {
