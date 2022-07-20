@@ -8,17 +8,18 @@
 5. [Tests](#tests)
 6. [License](#license)
 7. [Questions](#questions)
+8. [Video Demonstation](#video)
 ### Description
-This program uses program uses prompts to allow user create a professional README file, that includes licenses, installation, usage, and other key informations.
+This program uses prompts to allow user create a professional README file. It includes license, installation, usage, and other key informations.
 
 ### Installation
-Simply type "cd Develop" and "npm install". Once you have node_modules installed, you can run "node index.js" to create your own README file.
+The installation process requires you to have nodejs and npm installed
 
 ### Usage
-cd Develop > npm install > node index.js > follow the prompt to create the README file.
+cd Develop > npm install > node index.js > follow the prompt to create the README file
 
 ### Contributing
-Feel free to contact me and fork this repository.
+Feel free to contact me and fork this repository. Contact informations are below this section.
 
 ### Tests
 WIP
@@ -28,3 +29,5 @@ This application is covered under the MIT License. Find out more at [MIT License
 ### Questions
 Here is the link to my GitHub profile: [GitHub](https://github.com/DanTheDev-zsh)  
 You can also email me at sysad.daniel@gmail.com
+### Video
+[Click here for video demonstration](https://drive.google.com/file/d/1mKrRF_LC1-OkBblUmugGogqwqHSrJgLZ/view?usp=sharing)
